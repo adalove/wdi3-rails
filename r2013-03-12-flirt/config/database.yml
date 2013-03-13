@@ -1,0 +1,28 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-flirt_development
+  pool: 5
+  host: localhost
+  username: Shefali
+  password:
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-flirt_test
+  pool: 5
+  host: localhost
+  username: Shefali
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: r2013-03-12-flirt_production
+  pool: 5
+  host: localhost
+  username: Shefali
+  password:
