@@ -1,12 +1,11 @@
 class SubscribersController < ApplicationController
-  def index
-  end
-
   def new
-    @subscriber = Subscriber.new
+    @user = User.new
   end
 
   def create
-    Subscriber.create(params[:subscriber])
+    user = User.create(params[:user])
+    subscriber = Subscriber.create(tagline: 'change me', bio: 'please change bio', gender: 'please change gender', age: 99)
+    subscriber.user = user
   end
 end
